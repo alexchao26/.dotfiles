@@ -11,7 +11,7 @@ This was setup using a bare git repo, per an [Atlassian article](https://www.atl
 - LaunchAgents ([learn more here](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html))
     - to remap/swap the ESC and CAPS keys
     - to schedule the running of a command that excludes node_modules from Time Machine backups
-  - VLC config for my preferred keyboard mapping
+- VLC config for my preferred keyboard mapping
 
 ## Setup
 1. Clone this repo using the --bare flag into the root directory.
