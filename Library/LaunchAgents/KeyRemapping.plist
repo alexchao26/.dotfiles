@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>KeyRemapping</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/hidutil</string>
+        <string>property</string>
+        <string>--set</string>
+        <!-- Remaps. Esc -> caps lock only works on keyboards with a physical ESC key -->
+        <!-- 39 (caps lock) => 29 (escape) -->
+        <!-- 29 (escape) => 39 (caps lock) -->
+        <string>
+          {
+            "UserKeyMapping": [
+              {
+                "HIDKeyboardModifierMappingSrc":0x700000029,
+                "HIDKeyboardModifierMappingDst":0x700000039
+              }, {
+                "HIDKeyboardModifierMappingSrc":0x700000039,
+                "HIDKeyboardModifierMappingDst":0x700000029
+              }
+            ]
+          }
+        </string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+</dict>
+</plist>

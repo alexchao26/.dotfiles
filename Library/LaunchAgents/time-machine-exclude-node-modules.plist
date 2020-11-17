@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.user.time-machine-exclude-node-modules-job</string>
+  <!-- Run at load time -->
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <false/>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>-c</string>
+    <!-- 
+      this is the actual terminal command to run on the calendar interval,
+      goes to ~ directory, then (&&) runs a find command and executes tmutil addexclusion on found directories
+      anatomy of find command: - find the directories named node_modules, -prune: do not dive into subdirectories
+    -->
+    <string>cd "$HOME" &amp;&amp; find $(pwd) -type d -name node_modules -prune -exec tmutil addexclusion {} \;</string>
+  </array>
+
+  <!--
+    Run once per 24 hours (and on load from above)
+    if the computer is not on it will run at next startup
+  -->
+  <key>StartInterval</key>
+  <integer>86400</integer>
+
+  <!-- Debug logging  -->
+  <!--
+  <key>StandardOutPath</key>
+  <string>/tmp/launchd.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/launchd.log</string>
+  -->
+</dict>
+</plist>
