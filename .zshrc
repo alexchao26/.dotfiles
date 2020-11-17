@@ -20,4 +20,4 @@ autoload -U compinit; compinit
 source ~/.bash_profile 
 
 # git alias for dotfile specific storage
-alias dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias dotfiles="git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
