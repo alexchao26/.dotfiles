@@ -1,0 +1,22 @@
+// ~/Library/Application\ Support/Code/User/keybindings.json
+// Open with Command Prompt in VS Code (cmd+shift+P) at "Preferences: Open Keyboard Shortcuts (JSON)"
+[
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  }, {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
+  }, {
+    // jump back and forward (like browser history)
+    "key": "cmd+[",
+    "command": "workbench.action.navigateBack"
+  }, {
+    "key": "cmd+]",
+    "command": "workbench.action.navigateForward"
+  }, {
+    // source control view
+    "key": "cmd+shift+G",
+    "command": "workbench.view.scm"
+  }
+]
