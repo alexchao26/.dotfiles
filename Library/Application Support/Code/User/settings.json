@@ -20,6 +20,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "eslint.format.enable": true,
   "eslint.options": {
     "extensions": [
       ".js",
@@ -27,6 +28,7 @@
     ]
   },
   "eslint.alwaysShowStatus": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
   // better comments extension settings
   "better-comments.tags": [
       {
@@ -118,11 +120,8 @@
         "editorWhitespace.foreground": "#676B79" // light midnight from panda colors.yaml
       }
     },
-    "eslint.format.enable": true,
     "explorer.confirmDelete": false,
-    "javascript.updateImportsOnFileMove.enabled": "always",
     "explorer.confirmDragAndDrop": false,
-    "workbench.sideBar.location": "left",
     "bracket-pair-colorizer-2.colors": [
       "Yellow",
       "Fuchsia",
