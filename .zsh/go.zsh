@@ -2,18 +2,10 @@
 # * Go aliases
 # * ############################################################################
 export PATH=$PATH:$HOME/go/bin
+export GOALEX=$HOME/go/src/github.com/alexchao26
 
 # paths
 alias alexchao26="~/go/src/github.com/alexchao26"
-
-gor() {
-  if [ "$1" = "" ]; then
-    echo "go run main.go"
-    go run main.go
-  else
-    go run $1
-  fi
-}
 
 # colorize the go test output
 # escape $, " (within double quotes) and \ (escape itself)
