@@ -17,7 +17,7 @@ done
 autoload -U compinit; compinit
 
 # source env variables from bash_profile
-source ~/.bash_profile 
+# source ~/.bash_profile 
 
 # git alias for dotfile specific storage
 alias dotfiles="git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
