@@ -67,66 +67,61 @@
         "strikethrough": false,
         "backgroundColor": "transparent"
       }
-    ],
-    // code spell check extension: user dictionary
-    "cSpell.userWords": [
-      "Follow's",
-      "Waitgroup",
-      "Waitgroups",
-      "Warningf",
-      "alexchao",
-      "algo",
-      "algos",
-      "chao",
-      "dedupe",
-      "enqueuer",
-      "falsey",
-      "flexbox",
-      "fontawesome",
-      "fortawesome",
-      "goroutine",
-      "goroutines",
-      "graphquill",
-      "grpc",
-      "hacky",
-      "interwebs",
-      "jwts",
-      "logn",
-      "mutex",
-      "nlogn",
-      "noindex",
-      "nytm",
-      "postgres",
-      "postgresql",
-      "psql",
-      "pubp",
-      "readinglist",
-      "recurse",
-      "regi",
-      "repos",
-      "roadmap",
-      "struct",
-      "structs",
-      "trex"
-    ],
-    // codelens settings
-    "debug.javascript.codelens.npmScripts": "never",
-    "go.enableCodeLens": {
-      "references": false,
-      "runtest": false
-    },
-    "workbench.colorCustomizations": {
-      "[Panda Syntax]": {
-        "editorWhitespace.foreground": "#676B79" // light midnight from panda colors.yaml
-      }
-    },
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "bracket-pair-colorizer-2.colors": [
-      "Yellow",
-      "Fuchsia",
-      "Orange",
-      "LightSkyBlue"
   ],
+  // code spell check extension: user dictionary
+  "cSpell.userWords": [
+    "Follow's",
+    "Waitgroup",
+    "Waitgroups",
+    "Warningf",
+    "alexchao",
+    "algo",
+    "algos",
+    "chao",
+    "dedupe",
+    "enqueuer",
+    "falsey",
+    "flexbox",
+    "fontawesome",
+    "fortawesome",
+    "goroutine",
+    "goroutines",
+    "graphquill",
+    "grpc",
+    "hacky",
+    "interwebs",
+    "jwts",
+    "logn",
+    "mutex",
+    "nlogn",
+    "noindex",
+    "nytm",
+    "postgres",
+    "postgresql",
+    "psql",
+    "pubp",
+    "readinglist",
+    "recurse",
+    "regi",
+    "repos",
+    "roadmap",
+    "struct",
+    "structs",
+    "trex"
+  ],
+  // codelens settings
+  "debug.javascript.codelens.npmScripts": "never",
+  "go.enableCodeLens": {
+    "references": false,
+    "runtest": false
+  },
+  "workbench.colorCustomizations": {
+    "[Panda Syntax]": {
+      "editorWhitespace.foreground": "#676B79" // light midnight from panda colors.yaml
+    }
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "bracketPairColorizer.timeOut": 200,
   "workbench.colorTheme": "Panda Syntax"
 }
