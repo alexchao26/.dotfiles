@@ -78,6 +78,7 @@
     "algo",
     "algos",
     "chao",
+    "coord",
     "dedupe",
     "enqueuer",
     "falsey",
@@ -92,9 +93,11 @@
     "interwebs",
     "jwts",
     "logn",
+    "mathy",
     "mutex",
     "nlogn",
     "noindex",
+    "nums",
     "nytm",
     "postgres",
     "postgresql",
@@ -122,6 +125,6 @@
   },
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "bracketPairColorizer.timeOut": 200,
+  "bracketPairColorizer.timeOut": 100,
   "workbench.colorTheme": "Panda Syntax"
 }
