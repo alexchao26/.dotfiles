@@ -1,0 +1,125 @@
+// ~/Library/Application\ Support/Code/User/settings.json
+{
+  "editor.dragAndDrop": false,
+  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.rulers": [80, 100],
+  "window.zoomLevel": 0,
+  "workbench.startupEditor": "none",
+  "[plaintext]": {
+    "editor.quickSuggestions": false,
+    "editor.wordWrap": "on"
+  },
+  "[yaml]": {
+    "editor.wordWrap": "on"
+  },
+  "go.formatTool": "goimports",
+  // eslint format-on-save settings for JS
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.format.enable": true,
+  "eslint.options": {
+    "extensions": [
+      ".js",
+      ".jsx"
+    ]
+  },
+  "eslint.alwaysShowStatus": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // better comments extension settings
+  "better-comments.tags": [
+      {
+        "tag": "!",
+        "color": "#FF2D00",
+        "strikethrough": false,
+        "backgroundColor": "transparent"
+      },
+      {
+        "tag": "?",
+        "color": "#3498DB",
+        "strikethrough": false,
+        "backgroundColor": "transparent"
+      },
+      {
+        "tag": "--",
+        "color": "#474747",
+        "strikethrough": true,
+        "backgroundColor": "transparent"
+      },
+      {
+        "tag": "todo",
+        "color": "#FF8C00",
+        "strikethrough": false,
+        "backgroundColor": "transparent"
+      },
+      {
+        "tag": "*",
+        "color": "#98C379",
+        "strikethrough": false,
+        "backgroundColor": "transparent"
+      },
+      {
+        "tag": "note",
+        "color": "#f2beff",
+        "strikethrough": false,
+        "backgroundColor": "transparent"
+      }
+  ],
+  // code spell check extension: user dictionary
+  "cSpell.userWords": [
+    "Follow's",
+    "Waitgroup",
+    "Waitgroups",
+    "Warningf",
+    "alexchao",
+    "algo",
+    "algos",
+    "chao",
+    "coord",
+    "dedupe",
+    "enqueuer",
+    "falsey",
+    "flexbox",
+    "fontawesome",
+    "fortawesome",
+    "goroutine",
+    "goroutines",
+    "graphquill",
+    "grpc",
+    "hacky",
+    "interwebs",
+    "jwts",
+    "logn",
+    "mathy",
+    "mutex",
+    "nlogn",
+    "noindex",
+    "nums",
+    "nytm",
+    "postgres",
+    "postgresql",
+    "psql",
+    "pubp",
+    "readinglist",
+    "recurse",
+    "regi",
+    "repos",
+    "roadmap",
+    "struct",
+    "structs",
+    "trex"
+  ],
+  // codelens settings
+  "debug.javascript.codelens.npmScripts": "never",
+  "go.enableCodeLens": {
+    "references": false,
+    "runtest": false
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "bracketPairColorizer.timeOut": 100,
+  "workbench.colorTheme": "Dracula Soft",
+  "terminal.integrated.localEchoLatencyThreshold": -1
+}
