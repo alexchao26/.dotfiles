@@ -28,6 +28,7 @@ killport() {
 alias vlc="open -a VLC"
 alias chrome="open -a Google\ Chrome"
 alias canary="open -a Google\ Chrome\ Canary"
+alias preview="open -a Preview"
 
 # just type filename into command line to open the file
 alias -s md=code
