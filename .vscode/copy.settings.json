@@ -15,6 +15,7 @@
     "editor.wordWrap": "on"
   },
   "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
   // eslint format-on-save settings for JS
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
@@ -121,5 +122,11 @@
   "explorer.confirmDragAndDrop": false,
   "bracketPairColorizer.timeOut": 100,
   "workbench.colorTheme": "Dracula Soft",
-  "terminal.integrated.localEchoLatencyThreshold": -1
+  "terminal.integrated.localEchoLatencyThreshold": -1,
+  "editor.formatOnSave": true,
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true
+  },
 }

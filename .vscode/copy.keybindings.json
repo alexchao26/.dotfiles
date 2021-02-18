@@ -1,21 +1,40 @@
 // ~/Library/Application\ Support/Code/User/keybindings.json
 [
-  {
-    "key": "ctrl+tab",
-    "command": "workbench.action.nextEditor"
-  }, {
-    "key": "ctrl+shift+tab",
-    "command": "workbench.action.previousEditor"
-  }, {
+    {
+      "key": "ctrl+tab",
+      "command": "workbench.action.nextEditor"
+    }, 
+    {
+      "key": "ctrl+shift+tab",
+      "command": "workbench.action.previousEditor"
+    }, 
     // jump back and forward (like browser history)
-    "key": "cmd+[",
-    "command": "workbench.action.navigateBack"
-  }, {
-    "key": "cmd+]",
-    "command": "workbench.action.navigateForward"
-  }, {
+    {
+      "key": "cmd+[",
+      "command": "workbench.action.navigateBack"
+    }, 
+    {
+      "key": "cmd+]",
+      "command": "workbench.action.navigateForward"
+    }, 
     // source control view
-    "key": "cmd+shift+G",
-    "command": "workbench.view.scm"
-  }
-]
+    {
+      "key": "cmd+shift+G",
+      "command": "workbench.view.scm"
+    },
+    // showing/jumping to definition of focused item
+    {
+      "key": "alt+d",
+      "command": "editor.action.showDefinitionPreviewHover"
+    },
+    {
+      "key": "shift+alt+d",
+      "command": "editor.action.revealDefinition",
+      "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+      "key": "f12",
+      "command": "-editor.action.revealDefinition",
+      "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    }
+  ]

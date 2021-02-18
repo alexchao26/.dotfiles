@@ -8,6 +8,9 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# git alias for dotfile specific storage
+alias dotfiles="git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
+
 # Source all zsh files in ~/.zsh folder, separeted by shortcut type
 for f in ~/.zsh/*.zsh; do
   source "$f"
@@ -15,9 +18,3 @@ done
 
 # autocompletion
 autoload -U compinit; compinit
-
-# source env variables from bash_profile
-# source ~/.bash_profile 
-
-# git alias for dotfile specific storage
-alias dotfiles="git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
