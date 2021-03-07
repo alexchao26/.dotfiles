@@ -18,3 +18,6 @@ done
 
 # autocompletion
 autoload -U compinit; compinit
+
+alias vhist="vim ~/.zsh_history"
+
