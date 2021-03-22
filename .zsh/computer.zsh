@@ -3,9 +3,12 @@
 # *   basically wrappers around standard commands
 # * ############################################################################
 
-# ! REMAP rm to trash (npm package: trash-cli) to prevent permanently deleting files
-# install via `npm w/ npm i -g trash-cli`
-alias rm="trash"
+# remap `rm` to make deleting files reversible
+rm () {
+  for ((i = 1; i <= $#; i++ )); do
+    mv $argv[i] ~/.Trash
+  done
+}
 
 # alias to reload config into existing zsh terminal instance
 alias reload=". ~/.zshrc"
