@@ -4,11 +4,14 @@
 # * ############################################################################
 
 # remap `rm` to make deleting files reversible
-rm () {
+mv_not_rm () {
   for ((i = 1; i <= $#; i++ )); do
     mv $argv[i] ~/.Trash
   done
 }
+# set as alias b/c it can be unaliased (`unalias rm`) or bypassed (`\rm -rf some/dir`)
+# in a terminal instance if needed
+alias rm=mv_not_rm
 
 # alias to reload config into existing zsh terminal instance
 alias reload=". ~/.zshrc"
