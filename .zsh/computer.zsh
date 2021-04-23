@@ -13,6 +13,8 @@ mv_not_rm () {
 # in a terminal instance if needed
 alias rm=mv_not_rm
 
+alias curl="curl -i"
+
 # alias to reload config into existing zsh terminal instance
 alias reload=". ~/.zshrc"
 
@@ -33,7 +35,7 @@ killport() {
 # default programs
 alias vlc="open -a VLC"
 alias chrome="open -a Google\ Chrome"
-alias canary="open -a Google\ Chrome\ Canary"
+alias chromedev="open -a Google\ Chrome\ Dev"
 alias preview="open -a Preview"
 
 # just type filename into command line to open the file
