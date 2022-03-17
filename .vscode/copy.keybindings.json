@@ -1,40 +1,61 @@
 // ~/Library/Application\ Support/Code/User/keybindings.json
 [
     {
-      "key": "ctrl+tab",
-      "command": "workbench.action.nextEditor"
-    }, 
-    {
-      "key": "ctrl+shift+tab",
-      "command": "workbench.action.previousEditor"
-    }, 
-    // jump back and forward (like browser history)
-    {
-      "key": "cmd+[",
-      "command": "workbench.action.navigateBack"
-    }, 
-    {
-      "key": "cmd+]",
-      "command": "workbench.action.navigateForward"
-    }, 
-    // source control view
-    {
-      "key": "cmd+shift+G",
-      "command": "workbench.view.scm"
-    },
-    // showing/jumping to definition of focused item
-    {
-      "key": "alt+d",
-      "command": "editor.action.showDefinitionPreviewHover"
+        // switch tabs like browser
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor",
     },
     {
-      "key": "shift+alt+d",
-      "command": "editor.action.revealDefinition",
-      "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+        // switch tabs like browser
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor",
     },
     {
-      "key": "f12",
-      "command": "-editor.action.revealDefinition",
-      "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
-    }
-  ]
+        // navigate history like browser history
+        "key": "cmd+[",
+        "command": "workbench.action.navigateBack",
+    },
+    {
+        // navigate history like browser history
+        "key": "cmd+]",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        // source control view
+        "key": "cmd+shift+G",
+        "command": "workbench.view.scm"
+    },
+    {
+        // show definition in tooltip
+        "key": "alt+d",
+        "command": "editor.action.showDefinitionPreviewHover"
+    },
+    {
+        // overwrite degbugger shortcut, assign to "jump to definition"
+        "key": "cmd+shift+d",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        // overwrite degbugger shortcut, assign to "jump to definition"
+        "key": "cmd+shift+d",
+        "command": "-workbench.view.debug",
+    },
+    {
+        // additional jump to definition shortcut
+        "key": "shift+alt+d",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        // disable... I keep accidentally opening a terminal I don't need...
+        "key": "shift+cmd+c",
+        "command": "-workbench.action.terminal.openNativeConsole",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "cmd+shift+i",
+        "command": "editor.action.goToImplementation",
+        "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+]
