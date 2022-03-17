@@ -82,6 +82,10 @@
     ],
     // code spell check extension: user dictionary
     "cSpell.userWords": [
+        "Follow's",
+        "Waitgroup",
+        "Waitgroups",
+        "Warningf",
         "alexchao",
         "algo",
         "algos",
@@ -93,7 +97,6 @@
         "enqueuer",
         "falsey",
         "flexbox",
-        "Follow's",
         "fontawesome",
         "fortawesome",
         "goroutine",
@@ -124,7 +127,6 @@
         "regi",
         "repos",
         "roadmap",
-        "Samizidat",
         "struct",
         "structs",
         "trex",
