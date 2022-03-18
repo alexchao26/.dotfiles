@@ -27,7 +27,11 @@ This was setup using a bare git repo, per an [Atlassian article](https://www.atl
 1. Don't show untracked files in the copied bare file
 
     `dotfile config --local status.showUntrackedFiles no`
-  
+
+1. (Optional) Setup symlink to iCloud to $HOME
+
+    `ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs ./iCloud`
+
 ## Adding New Changes
 Use the `dotfile` alias as you would `git`.
 
@@ -50,6 +54,3 @@ dotfile push
 - [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
-- Theme: [Panda Theme](https://marketplace.visualstudio.com/items?itemName=tinkertrain.theme-panda)
-
