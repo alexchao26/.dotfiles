@@ -30,7 +30,7 @@ This was setup using a bare git repo, per an [Atlassian article](https://www.atl
 
 1. (Optional) Setup symlink to iCloud to $HOME
 
-    `ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs ./iCloud`
+    `ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs ./icloud`
 
 ## Adding New Changes
 Use the `dotfile` alias as you would `git`.
