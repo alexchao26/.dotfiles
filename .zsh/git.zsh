@@ -18,4 +18,5 @@ alias gr="git remote -v"
 alias gch="git checkout"
 alias glo="git log --oneline"
 alias gd="git diff --word-diff"
+alias gbc="git branch | cat"
 
