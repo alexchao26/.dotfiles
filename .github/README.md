@@ -45,7 +45,7 @@ dotfile push
 - [Alfred](https://www.alfredapp.com/) to replace native Spotlight
 - [Rectangle](https://rectangleapp.com/) for window management
     - I (unfortunately?) paid for [Magnet](https://apps.apple.com/us/app/magnet/id441258766?mt=12) when I first got a Mac so I just use that, but Rectangle is open source and free :)
-- Command to remove animation time of dock un-hiding: `defaults write com.apple.dock autohide-time-modifier -float 0; killall Dock`
+- Command to remove animation time of dock un-hiding: `defaults write com.apple.dock autohide-time-modifier -float 1; killall Dock`
 
 ### VSCode Extensions
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
