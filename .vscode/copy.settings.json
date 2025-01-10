@@ -2,7 +2,7 @@
 {
     "editor.dragAndDrop": false,
     "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontLigatures": true,
+    // "editor.fontLigatures": true,
     "editor.fontSize": 13,
     "editor.rulers": [
         80,
@@ -11,7 +11,11 @@
     ],
     "workbench.startupEditor": "none",
     "[plaintext]": {
-        "editor.quickSuggestions": false,
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
         "editor.wordWrap": "on"
     },
     "[yaml]": {
@@ -20,16 +24,16 @@
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
     // https://staticcheck.io/docs
-    "go.lintFlags": [
-        "-checks=all"
-    ],
+    // "go.lintFlags": [
+    //     "-checks=all"
+    // ],
     // autocompletes funcs with placeholders & types
     "gopls": {
         "usePlaceholders": true,
     },
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": "explicit"
     },
     "eslint.options": {
         "extensions": [
@@ -82,10 +86,6 @@
     ],
     // code spell check extension: user dictionary
     "cSpell.userWords": [
-        "Follow's",
-        "Waitgroup",
-        "Waitgroups",
-        "Warningf",
         "alexchao",
         "algo",
         "algos",
@@ -97,6 +97,7 @@
         "enqueuer",
         "falsey",
         "flexbox",
+        "Follow's",
         "fontawesome",
         "fortawesome",
         "goroutine",
@@ -105,6 +106,7 @@
         "grpc",
         "hacky",
         "hardcode",
+        "heiarchy",
         "idempotency",
         "interwebs",
         "jwts",
@@ -127,6 +129,7 @@
         "regi",
         "repos",
         "roadmap",
+        "Samizidat",
         "struct",
         "structs",
         "trex",
@@ -145,9 +148,8 @@
     },
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "Dracula Soft",
+    "workbench.colorTheme": "Dracula Theme Soft",
     "workbench.editor.wrapTabs": true,
-    "workbench.editor.untitled.hint": "hidden",
     "terminal.integrated.localEchoLatencyThreshold": -1,
     "files.watcherExclude": {
         "**/.bloop": true,
@@ -162,4 +164,15 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.inlayHints.enabled": false,
     "go.useCodeSnippetsOnFunctionSuggest": true,
+    "workbench.editor.empty.hint": "hidden",
+    "github.copilot.advanced": {
+        "authProvider": "github"
+    },
+    "python.analysis.typeCheckingMode": "strict",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
 }

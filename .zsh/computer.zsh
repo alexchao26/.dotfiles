@@ -3,27 +3,6 @@
 # *   basically wrappers around standard commands
 # * ############################################################################
 
-# remap `rm` to make deleting files reversible
-mv_not_rm () {
-  for ((i = 1; i <= $#; i++ )); do
-    mv $argv[i] ~/.Trash
-  done
-}
-# set as alias b/c it can be unaliased (`unalias rm`) or bypassed (`\rm -rf some/dir`)
-# in a terminal instance if needed
-alias rm=mv_not_rm
-
-# alias to reload config into existing zsh terminal instance
-alias reload=". ~/.zshrc"
-
-# alias to mkdir and cd into it
-mkcd() {
-  mkdir $1 && cd $1
-}
-
-# list in single column
-alias lso="ls -1"
-
 # aliases to show all active ports and to kill a specified port
 alias portz="echo \"lsof -nP +c 15 | grep LISTEN\" && lsof -nP +c 15 | grep LISTEN"
 killport() {
