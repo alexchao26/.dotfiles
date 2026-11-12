@@ -50,7 +50,7 @@ zstyle :prompt:pure:path color $blue
 
 
 # git alias for dotfile specific storage
-alias dotfiles="git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
+alias dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 # autocompletion
 autoload -U compinit; compinit
